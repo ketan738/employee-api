@@ -86,12 +86,12 @@ public class EmployeeService {
         return repository.save(existingEmployee);
     }
 
-    public void deleteEmployee(int id) {
+   public void deleteEmployee(int id) {
 
-        logger.info("Deleting employee with ID: {}", id);
+    logger.info("Deleting employee with ID: {}", id);
 
-        repository.deleteById(id);
-    }
+    repository.deleteById(id);
+}
 
     public EmployeeDTO convertToDTO(Employee employee) {
 
